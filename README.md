@@ -38,6 +38,7 @@
 - `lightgbm`
 - `scikit-learn`
 - `joblib`
+- `ydata_profiling`
 
 ### Установка
 Склонируйте репозиторий и установите зависимости:

@@ -87,6 +87,9 @@ pipeline.save_grid_model_pickle(name='final_model.pkl')
 #### `plot_numeric_distribution(self, column, kde=True, alpha=0.5, color='g', figsize=(14, 20), **kwargs)`
 - **Описание**: Строит график распределения для указанного числового столбца.
 
+#### `smart_report_html(self, file_name)`
+- **Описание**: Создает отчет ydata с полной информации о данных.
+
 #### `remove_dublicates(self, **kwargs)`
 - **Описание**: Удаляет дубликаты из набора данных.
 
@@ -122,12 +125,6 @@ pipeline.save_grid_model_pickle(name='final_model.pkl')
 
 #### `PSI(self)`
 - **Описание**: Проводит анализ индекса стабильности популяции (PSI) для оценки стабильности признаков.
-
-#### `continuous2interval(self, df, df_target, percent_interval=0.1)`
-- **Описание**: Преобразует непрерывные признаки в интервальные для анализа.
-
-#### `PSI_factor_analysis(self, dev, val, column)`
-- **Описание**: Вычисляет PSI для указанного столбца между двумя наборами данных.
 
 #### `grid_fit(self, param_grid, scoring='recall', cv=None, **kwargs)`
 - **Описание**: Проводит поиск оптимальных гиперпараметров с помощью кросс-валидации и `GridSearchCV`.
